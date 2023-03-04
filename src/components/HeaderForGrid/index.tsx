@@ -7,7 +7,7 @@ interface IHeaderForGrid{
     count?: number
 }
 
-export function HeaderForGrid({tagsData, count=10}: IHeaderForGrid){
+export default function HeaderForGrid({tagsData, count=10}: IHeaderForGrid){
     const {setData} = useContext(provider)
     return(
         <>
@@ -17,8 +17,8 @@ export function HeaderForGrid({tagsData, count=10}: IHeaderForGrid){
                 </div>
             </div>
             <div className="row">
-                <div id="" className="cont_tags com-secondary-tag hlp-marginBottom-20">
-                    {tagCounter(tagsData).slice(0,count).map((data) => <a href={`/tema/${data.slug}`} onClick={(e)=>{
+                <div id="" className="cont_tags com-secondary-tag hlp-marginBottom-20" data-testid="tags">
+                    {tagCounter(tagsData).slice(0,count).map((data) => <a href={`/tema/${data.slug}`} key={data.slug} onClick={(e)=>{
                         e.preventDefault()
                         console.log(data.text)
                         setData(data.slug)}}>{data.text}</a>)}                

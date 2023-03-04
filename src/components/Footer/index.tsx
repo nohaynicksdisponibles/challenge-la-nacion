@@ -1,10 +1,11 @@
+/* eslint-disable react/jsx-no-target-blank */
 import lanacionLogo from "../../assets/lanacionlogo.png"
 import rss from "../../assets/rss-logo.png"
 import insta from "../../assets/insta.png"
 import twitter from "../../assets/twitter.png"
 import facebook from "../../assets/facebook.png"
 
-export function Footer(){
+export default function Footer(){
     return (
         <footer>
             <div className="lay">

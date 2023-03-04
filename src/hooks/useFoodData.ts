@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getFoodLocal } from "../services/food";
 
-export function useFoodData(){
+export default function useFoodData(){
     const [statusAndData, setStatusAndData] = useState({
         isLoading: true,
         isError: false,

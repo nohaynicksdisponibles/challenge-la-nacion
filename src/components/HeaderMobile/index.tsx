@@ -1,10 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import lanacionLogo from "../../assets/lanacionlogo.png"
 import home from "../../assets/home.png"
 import card from "../../assets/card.png"
 import comment from "../../assets/comment.png"
 import hamburger from "../../assets/hamburger.png"
 
-export function HeaderMobile(){
+export default function HeaderMobile(){
     return(
         <>  
         <header className="header-mobile">

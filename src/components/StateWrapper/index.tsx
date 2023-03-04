@@ -6,7 +6,7 @@ interface IStateWrapper{
     isSuccess?: boolean,
 }
 
-export function StateWrapper({isLoading, isError, isSuccess, children}: PropsWithChildren<IStateWrapper>){
+export default function StateWrapper({isLoading, isError, isSuccess, children}: PropsWithChildren<IStateWrapper>){
     return(
         <>
             {isLoading && <p>CARGANDO...</p>}

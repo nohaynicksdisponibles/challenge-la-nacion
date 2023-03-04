@@ -1,7 +1,7 @@
 import lanacionLogo from "../../assets/lanacionlogo.png"
 import magnifyingGlass from "../../assets/magnifying-glass.png" 
 
-export function Header(){
+export default function Header(){
     return (
         <header className="header" style={{marginBottom: "500px"}}>
             <div className="lay">
@@ -29,8 +29,8 @@ export function Header(){
                     </div>
                     <div className="col-4 header__right">
                         <div className="com-usuario">
-                            <button className="--btn --highlight hlp-marginRight-35">Suscribite</button>
-                            <button className="--btn --secondary">Ingresar</button>
+                            <button className="--btn --highlight hlp-marginRight-35 idSus">Suscribite</button>
+                            <button className="--btn --secondary idIngresar">Ingresar</button>
                         </div>                      
                     </div>
                 </div>
