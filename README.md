@@ -1,5 +1,3 @@
-# Challenge LA NACION
-
 <p align="center">
    <img style="width: 300px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Logo_La_Naci%C3%B3n.svg/2560px-Logo_La_Naci%C3%B3n.svg.png"/>
 </p>
