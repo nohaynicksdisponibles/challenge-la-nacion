@@ -2,8 +2,20 @@ import lanacionLogo from "../../assets/lanacionlogo.png"
 import magnifyingGlass from "../../assets/magnifying-glass.png" 
 
 export default function Header(){
+    let ubicacionPrincipal = window.pageYOffset;
+
+    window.onscroll = function(){
+        let desplazamientoActual = window.pageYOffset;
+        if(ubicacionPrincipal >= desplazamientoActual){
+            document.getElementById("headerId")!.style.top = "0"
+        }else{
+            document.getElementById("headerId")!.style.top = "-100px"
+        }
+        ubicacionPrincipal = desplazamientoActual;
+}
+
     return (
-        <header className="header" style={{marginBottom: "500px"}}>
+        <header className="header" id="headerId" style={{marginBottom: "500px"}}>
             <div className="lay">
                 <div className="row">
                     <div className="col-4 header__left">

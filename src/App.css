@@ -6050,6 +6050,7 @@ input[type=text]:focus::placeholder {
     transition: -webkit-transform 0.25s;
     transition: transform 0.25s;
     transition: transform 0.25s, -webkit-transform 0.25s;
+    transition: top 0.5s !important;
   }
   .header__left {
     display: -ms-grid;
