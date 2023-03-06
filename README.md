@@ -16,6 +16,25 @@ to install node modules **(NO third party modules were used)** then
 ```
 &nbsp;
 
+<p align="center">
+   <img style="width: 800px;" src="https://github.com/nohaynicksdisponibles/challenge-la-nacion/blob/master/src/assets/challenge-la-nacion.gif"/>
+</p>
+&nbsp;
+
+<p align="center">
+   <img style="width: 800px;" src="https://github.com/nohaynicksdisponibles/challenge-la-nacion/blob/master/src/assets/challenge-la-nacion-mobile.gif"/>
+</p>
+&nbsp;
+
+
+<h2>Required styles were applied<h2/>
+&nbsp;
+
+- <a href="http://especiales.lanacion.com.ar/arc-css/acumulado.asp">HTML layout</a>
+- <a href="https://especiales.lanacion.com.ar/arc-css/css/site.css">CSS sheet</a> 
+- <a href="https://jrt2bb3b2nlkw5ozvfcld62wbe0pnifh.lambda-url.us-east-1.on.aws/">Endpoint</a>
+- <a href="https://1drv.ms/b/s!AiikDLsglI4O0QIjGFWBVK2Gc4EX?e=7lvtnN">Requirements</a>
+
 ## Available Scripts
 
 In the project directory, you can run:
