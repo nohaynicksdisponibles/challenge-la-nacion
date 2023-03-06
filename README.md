@@ -34,6 +34,9 @@ to install node modules **(NO third party modules were used)** then
 - <a href="https://especiales.lanacion.com.ar/arc-css/css/site.css">CSS sheet</a> 
 - <a href="https://jrt2bb3b2nlkw5ozvfcld62wbe0pnifh.lambda-url.us-east-1.on.aws/">Endpoint</a>
 - <a href="https://1drv.ms/b/s!AiikDLsglI4O0QIjGFWBVK2Gc4EX?e=7lvtnN">Requirements</a>
+ 
+## Access through Vercel
+- <a href="https://challenge-la-nacion.vercel.app/">Vercel Deploy</a>
 
 ## Available Scripts
 
@@ -49,6 +52,9 @@ You will also see any lint errors in the console.
 
 ### `npm test`
 
+- <h3>unit tests were added</h3>
+&nbsp;
+   
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
