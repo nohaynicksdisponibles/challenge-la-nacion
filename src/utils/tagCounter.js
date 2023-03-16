@@ -1,23 +1,19 @@
 export function tagCounter(array){
-    let arrayCopy = [...array]
-    let accumulator = {}
-
-    for(let i=0; i<arrayCopy.length; i++){
-        for(let j = 0; j<arrayCopy[i].taxonomy.tags.length; j++){
-            let tagElement = arrayCopy[i].taxonomy.tags[j]
-
-            if(accumulator.hasOwnProperty(tagElement.slug)){
-                accumulator[tagElement.slug].count +=1
-                continue;
+    const accumulator = [...array].reduce((acc, item)=>{
+        item.taxonomy.tags.forEach((tag)=>{
+            if(!acc.hasOwnProperty(tag.slug)){
+                acc[tag.slug] = {
+                    slug: tag.slug,
+                    text: tag.text,
+                    count: 1
+                }
+                return;
             }
+            acc[tag.slug].count +=1;       
+        })
 
-            accumulator[tagElement.slug] = {
-                slug: tagElement.slug,
-                text: tagElement.text,
-                count: 1
-            }
-        }
-    }
+        return acc;
+    }, {})
 
     return Object.values(accumulator).sort((a, b) => b.count - a.count)
 }
