@@ -1,18 +1,22 @@
+const accAssignProperty = (acc, tag) =>
+  Object.assign({}, acc, {
+    [tag.slug]: {
+      slug: tag.slug,
+      text: tag.text,
+      count: (acc[tag.slug]?.count || 0) + 1,
+    },
+});
+
+const tagsAcc = (acc, item) => {
+    const tags = [...item.taxonomy.tags]
+    const accumulator = {...acc}
+
+    return tags.reduce((accu, tag) => accAssignProperty(accu, tag), accumulator)
+}
+
 export function tagCounter(array){
     const accumulator = [...array].reduce((acc, item)=>{
-        item.taxonomy.tags.forEach((tag)=>{
-            if(!acc.hasOwnProperty(tag.slug)){
-                acc[tag.slug] = {
-                    slug: tag.slug,
-                    text: tag.text,
-                    count: 1
-                }
-                return;
-            }
-            acc[tag.slug].count +=1;       
-        })
-
-        return acc;
+        return tagsAcc(acc, item)
     }, {})
 
     return Object.values(accumulator).sort((a, b) => b.count - a.count)
